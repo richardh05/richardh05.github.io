@@ -2,3 +2,18 @@ baseURL: https://richardh05.github.io
 languageCode: en-gb
 title: Richard Hughes
 theme: risotto
+
+# Sidebar: bio
+params:
+  about:
+    title: rh
+    description: sample description
+
+# Sidebar: social links
+
+params:
+  socialLinks:
+    icon: fa-brands fa-github
+    title:  GitHub
+    url: https://github.com/richardh05/
+
