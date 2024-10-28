@@ -13,8 +13,11 @@ params:
       url: 'https://github.com/richardh05'
     - icon: fa-solid fa-envelope
       title: Email
-      url: 'richardh05@proton.com'
+      url: 'mailto:richardh05@proton.me'
     - icon: fa-brands fa-linkedin
       title: LinkedIn
       url: 'https://www.linkedin.com/in/richardh05/'
+    - icon: fa-solid fa-file-user
+      title: 'CV'
+      url: 'https://docs.google.com/document/d/1WDYcz8kHy8flXNPbT-Riahd2P6SrED1pUoS1ojMZJ2I/edit?usp=sharing'
 
