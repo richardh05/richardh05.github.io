@@ -3,7 +3,29 @@ languageCode: en-gb
 title: Richard Hughes
 theme: risotto
 
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 10
+
+frontmatter:
+  format: yaml
+
+
 params:
+  theme:
+    palette: dracula
   about:
     title: richard h
     description: 'Aspiring Software Developer at the University of Chester.'
