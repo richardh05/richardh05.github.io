@@ -6,7 +6,7 @@ theme: risotto
 params:
   about:
     title: richard h
-    description: 'sample description'
+    description: 'Aspiring Software Developer at the University of Chester.'
   socialLinks:
     - icon: fa-brands fa-github
       title: GitHub
@@ -14,4 +14,7 @@ params:
     - icon: fa-solid fa-envelope
       title: Email
       url: 'richardh05@proton.com'
+    - icon: fa-brands fa-linkedin
+      title: LinkedIn
+      url: 'https://www.linkedin.com/in/richardh05/'
 
