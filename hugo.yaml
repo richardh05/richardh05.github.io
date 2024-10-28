@@ -17,7 +17,7 @@ params:
     - icon: fa-brands fa-linkedin
       title: LinkedIn
       url: 'https://www.linkedin.com/in/richardh05/'
-    - icon: fa-solid fa-file-user
-      title: 'CV'
+    - icon: fa-solid fa-file-lines
+      title: CV
       url: 'https://docs.google.com/document/d/1WDYcz8kHy8flXNPbT-Riahd2P6SrED1pUoS1ojMZJ2I/edit?usp=sharing'
 
