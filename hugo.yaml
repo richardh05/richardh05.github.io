@@ -30,16 +30,16 @@ params:
     title: richard h
     description: 'Aspiring Software Developer at the University of Chester.'
   socialLinks:
-    - icon: fa-brands fa-github
-      title: GitHub
-      url: 'https://github.com/richardh05'
-    - icon: fa-solid fa-envelope
-      title: Email
-      url: 'mailto:richardh05@proton.me'
-    - icon: fa-brands fa-linkedin
-      title: LinkedIn
-      url: 'https://www.linkedin.com/in/richardh05/'
     - icon: fa-solid fa-file-lines
       title: CV
       url: 'https://docs.google.com/document/d/1WDYcz8kHy8flXNPbT-Riahd2P6SrED1pUoS1ojMZJ2I/edit?usp=sharing'
-
+    - icon: fa-solid fa-envelope
+      title: Email
+      url: 'mailto:richardh05@proton.me'
+    - icon: fa-brands fa-github
+      title: GitHub
+      url: 'https://github.com/richardh05'
+    - icon: fa-brands fa-linkedin
+      title: LinkedIn
+      url: 'https://www.linkedin.com/in/richardh05/'
+    
