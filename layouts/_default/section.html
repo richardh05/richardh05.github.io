@@ -5,14 +5,17 @@
 {{ define "main" -}}
 	{{ .Content }}
 	<h1>{{ .Title}}</h1>
+	{{ range .Pages.GroupByDate "2006" }}
+		<h2>{{ .Key }}</h2>
 	<ul>
-		{{- range.Pages }}
+		{{ range.Pages }}
 			<li>
-			<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006 Jan 02" }}</time> &ndash; 
-			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "02/01" }}</time> 
+			<a href="{{ .RelPermalink }}">{{ .Title }}: {{.Description}}</a>
 				
 			</li>
-		{{- end }}
+		{{ end }}
 	</ul>
+{{ end }}
 {{- end }}
 
