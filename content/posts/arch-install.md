@@ -1,12 +1,11 @@
 ---
 title: 'An (opinionated) Arch Linux Install Guide'
 description: "My personal Arch Linux guide, designed to tell me everything I need and nothing I don't"
-date: 2025-08-16T18:53:00Z
+date: 2025-08-16T18:53:00
 draft: false
 tags: ['Linux','Guide']
 ---
 
-# An (opinionated) Arch Linux Install Guide
 I haven't updated this site in a while, and thought I'd start of by sharing the notes I wrote back in 2024 while installing Arch for the first time. I reworked it into a full guide recently after needing to install Arch again for a new PC build, to skip any repetitive steps I'd need to do in the future. Because this is my guide for personal use, it's assumed:
 - You're got a UK keyboard, want British English on your system and are in the London timezone.
 - You might need to set up WiFi (my students halls didn't have Ethernet)

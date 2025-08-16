@@ -30,9 +30,6 @@ params:
     title: richard h
     description: 'Aspiring Software Developer at the University of Chester.'
   socialLinks:
-    - icon: fa-solid fa-file-lines
-      title: CV
-      url: 'https://docs.google.com/document/d/1WDYcz8kHy8flXNPbT-Riahd2P6SrED1pUoS1ojMZJ2I/edit?usp=sharing'
     - icon: fa-solid fa-envelope
       title: Email
       url: 'mailto:richardh05@proton.me'
