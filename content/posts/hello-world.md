@@ -6,4 +6,4 @@ draft: false
 tags: ['Update','Personal']
 ---
 
-Welcome to my blog! I'm not sure what sort of content I'm going to be posting here, or how frequently, but it's likey going to related to computer science and linux as they're my main interests right now. Thanks for visiting, and feel free to check back in the future.
+Welcome to my blog! I'm not sure what sort of content I'm going to be posting here, or how frequently, but it's likely going to be related to computer science and Linux as they're my main interests right now. Thanks for visiting, and feel free to check back in the future.
