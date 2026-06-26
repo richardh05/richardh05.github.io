@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-astro",
+  "type": "module",
+  "version": "1.4.0",
+  "packageManager": "pnpm@11.2.2",
+  "scripts": {
+    "predev": "node scripts/download-assets.mjs",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "prebuild": "node scripts/download-assets.mjs",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "astro check"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "astro": "^6.3.3",
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.9",
+    "@types/node": "^25.8.0",
+    "@typescript-eslint/parser": "8.59.3",
+    "eslint": "10.4.0",
+    "eslint-plugin-astro": "1.7.0",
+    "typescript": "6.0.3"
+  }
+}

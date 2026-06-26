@@ -1,0 +1,98 @@
+name: 1. Update Dependencies
+
+# Manual trigger — run from Actions → Run workflow in GitHub.
+# Updates all pinned packages to latest, audits for CVEs, pins the three.js
+# CDN version, and commits the result back.
+#
+# Required: GITHUB_TOKEN needs contents:write (granted automatically in the
+# permissions block below). No extra secrets needed for GitHub.
+
+on:
+  workflow_dispatch:
+
+  # ── Scheduled / automatic cron run ──────────────────────────────────────────
+  # Uncomment the block below to run this workflow automatically on a schedule.
+  # GitHub Actions cron uses UTC. Recommended: weekly on Monday at 06:00 UTC.
+  # The job is idempotent — if nothing is outdated it exits without committing.
+  #
+  # schedule:
+  #   - cron: '0 6 * * 1'   # Every Monday at 06:00 UTC
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-deps
+  cancel-in-progress: true
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  update-deps:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - uses: pnpm/action-setup@v4
+
+      - name: Update pinned packages to latest
+        run: |
+          pnpm update \
+            astro tailwindcss @tailwindcss/vite @astrojs/check \
+            typescript eslint @typescript-eslint/parser eslint-plugin-astro \
+            @types/node rss-parser prettier prettier-plugin-astro \
+            prettier-plugin-tailwindcss \
+            --latest
+
+      - name: Pin packageManager field to resolved pnpm version
+        run: |
+          PNPM_VERSION=$(pnpm --version)
+          sed -i "s|\"packageManager\": \"pnpm@[^\"]*\"|\"packageManager\": \"pnpm@${PNPM_VERSION}\"|" package.json
+          echo "packageManager pinned to pnpm@${PNPM_VERSION}"
+
+      - name: Security audit
+        run: pnpm audit --audit-level=high
+
+      - name: Pin three.js CDN version
+        run: |
+          THREE_LATEST=$(pnpm view three version)
+          OLD_THREE=$(sed -n 's|.*cdn\.jsdelivr\.net/npm/three@\([^/]*\)/.*|\1|p' \
+            scripts/download-assets.mjs | head -1)
+          if [ "$OLD_THREE" = "$THREE_LATEST" ]; then
+            echo "three.js already at $THREE_LATEST — no change"
+          else
+            sed -i "s|/npm/three@[^/]*/|/npm/three@$THREE_LATEST/|g; \
+                    s|/npm/three/|/npm/three@$THREE_LATEST/|g" \
+              scripts/download-assets.mjs
+            rm -f public/scripts/three.min.js
+            echo "three.js: $OLD_THREE → $THREE_LATEST  (public/scripts/three.min.js removed)"
+          fi
+
+      - name: Update README timestamp
+        run: |
+          TIMESTAMP=$(date -u +"%Y-%m-%d")
+          MARKER="<!-- packages-last-updated:"
+          NEW_LINE="<!-- packages-last-updated: ${TIMESTAMP} -->"
+          if grep -q "$MARKER" README.md; then
+            sed -i "s|${MARKER}[^>]*>|${NEW_LINE}|" README.md
+          else
+            printf "\n---\n\n%s\n" "$NEW_LINE" >> README.md
+          fi
+
+      - name: Commit and push updated lockfile
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add package.json pnpm-lock.yaml README.md scripts/download-assets.mjs
+          if git diff --cached --quiet; then
+            echo "All packages already up to date — nothing to commit."
+          else
+            git commit -m "chore: update pinned dependencies"
+            git push
+          fi
