@@ -1,53 +1,33 @@
 {
-  "title": "Your Name Here | Creative Portfolio",
-  "description": "Portfolio of a designer, developer, and creator. Browse work spanning web, visual design, 3D, video, and more — then reach out.",
+  "title": "Richard Hughes",
+  "description": "Portfolio of a full-stack developer.",
   "ogSiteName": "Portfolio",
-  "shortName": "FOLIO",
-  "tagline": "Designing experiences · Building products · Telling stories",
+  "shortName": "",
+  "tagline": "Software Engineer",
   "themeStorageKey": "portfolio-theme",
   "web3formsKey": "YOUR_WEB3FORMS_KEY_HERE",
   "footerAttribution": {
-    "builder": "Built with this open-source template",
-    "builderUrl": "https://github.com/your-github-handle",
-    "host": "Hosted on your platform of choice",
-    "hostUrl": "https://yourdomain.com"
+    "builder": "",
+    "builderUrl": "",
+    "host": "",
+    "hostUrl": ""
   },
   "retroTvCount": 21,
   "seoKeywords": [
-    "Creative Portfolio",
-    "Web Designer",
-    "Visual Artist",
+    "Software Engineer",
+    "Programmer",
+    "Mobile Developer",
+    "Web Developer",
     "UI/UX Design",
     "Front-End Developer",
-    "3D Artist",
-    "Motion Graphics",
-    "Brand Identity",
-    "Freelance Designer",
-    "Video Editor",
-    "Photography",
-    "Illustration",
-    "Digital Art",
-    "Graphic Design",
-    "Interactive Design",
-    "Product Design",
-    "Creative Direction",
-    "Art Direction",
+    "Back-End Developer",
     "Full-Stack Developer",
-    "Animator",
-    "Typographer",
-    "Storyteller",
+    "Systems Analyst",
+    "Brand Identity",
     "Open to Work",
-    "Available for Projects",
-    "Design Systems",
-    "Visual Storytelling"
+    "Available for Projects"
   ],
   "navExternal": [
-    {
-      "label": "Blog",
-      "desc": "Writing on design, process, and what I'm learning",
-      "personalKey": "blog",
-      "urlTemplate": "{value}"
-    },
     {
       "label": "GitHub",
       "desc": "Open-source work and side experiments",
@@ -59,18 +39,6 @@
       "desc": "Professional profile and recommendations",
       "personalKey": "linkedin",
       "urlTemplate": "https://linkedin.com/in/{value}"
-    },
-    {
-      "label": "Email",
-      "desc": "Best way to reach me for project inquiries",
-      "personalKey": "email",
-      "urlTemplate": "mailto:{value}"
-    },
-    {
-      "label": "Phone",
-      "desc": "Available for calls by appointment",
-      "personalKey": "phone",
-      "urlTemplate": "tel:{value}"
     }
   ],
   "serviceSites": [

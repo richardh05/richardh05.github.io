@@ -2,86 +2,94 @@
   "layout": "grid",
   "items": [
     {
-      "title": "Open Source Portfolio Template",
+      "title": "Fletch",
       "featured": true,
       "resume": true,
-      "company": "Community",
-      "category": "webdev",
-      "description": "The template you're looking at right now. Built with Astro, fully data-driven, and designed to be claimed by anyone. Fork it, fill it, ship it. All placeholder content is waiting for yours.",
-      "tags": ["Astro", "TypeScript", "Tailwind CSS", "Open Source", "Template"],
-      "icon": "command-line",
-      "sliderImage": "/images/projects/use-astro2.jpg",
+      "company": "Self-Directed",
+      "category": "full-stack",
+      "description": "A full-stack archery scoring app for data input and analysis, with an uncompromising UX-first approach. Development started in February 2026, with a launch plannned sometime in the next few months.",
+      "tags": ["Flutter", "Dart", "Pocketbase", "Docker", "Figma", "Material 3"],
+      "sliderImage": "/images/projects/fletch.png",
       "sliderOrder": 1,
-      "backgroundImage": "/images/projects/use-astro3.jpg",
+      "backgroundImage": "/images/projects/fletch.png",
       "images": [
-        "/images/projects/use-astro1.jpg",
-        "/images/projects/use-astro2.jpg",
-        "/images/projects/use-astro3.jpg"
+        "/images/projects/fletch.png"
       ],
-      "link": "",
-      "colorIcon": "devicon:astro",
-      "githubRepo": "portfolio-template"
-    },
-    {
-      "title": "3D Environment Study",
-      "featured": true,
-      "resume": true,
-      "company": "Personal Work",
-      "category": "blender",
-      "description": "A series of Blender scenes exploring lighting, texture, and atmosphere — no narrative, just craft. Rendered in Cycles, post-processed in Photoshop, shared as a study in patience and iteration.",
-      "tags": ["Blender", "3D Modeling", "Lighting", "Cycles Render", "Photoshop"],
-      "icon": "cpu-chip",
-      "sliderImage": "/images/projects/blender-mockup2.jpg",
-      "sliderOrder": 2,
-      "backgroundImage": "/images/projects/blender-mockup1.jpg",
-      "images": [
-        "/images/projects/blender-mockup1.jpg",
-        "/images/projects/blender-mockup2.jpg",
-        "/images/projects/blender-mockup3.jpg"
-      ],
-      "link": "",
-      "colorIcon": "devicon:blender",
+      "link": "https://richard-hughes.dev",
+      "colorIcon": "devicon:flutter",
       "githubRepo": ""
     },
     {
-      "title": "Personal Design System",
+      "title": "Museum Website Redesign",
       "featured": true,
-      "company": "Side Project",
-      "category": "design",
-      "description": "A living component library built for personal and freelance use. Design tokens, reusable components, and documentation that travel from project to project — no starting from scratch every time.",
-      "tags": ["Figma", "CSS", "TypeScript", "Design Systems", "Component Library"],
-      "icon": "document-text",
-      "sliderImage": "/images/projects/design-library3.jpg",
-      "sliderOrder": 4,
-      "backgroundImage": "/images/projects/design-library2.jpg",
+      "resume": true,
+      "company": "Cheshire Military Museum",
+      "category": "full-stack",
+      "description": "Led a team of 5 developers within a 10-person student project, personally architecting the database schema. Delivered a minimum viable product aligned with client requirements.",
+      "tags": ["ASP.NET CORE", "Microsoft SQL Server", "C#", "Project Management", "Figma", "HTML", "CSS"],
+      "sliderImage": "/images/projects/cmm.png",
+      "sliderOrder": 2,
+      "backgroundImage": "/images/projects/cmm.png",
       "images": [
-        "/images/projects/design-library1.jpg",
-        "/images/projects/design-library2.jpg",
-        "/images/projects/design-library3.jpg"
+        "/images/projects/cmm.png"
       ],
-      "link": "",
-      "colorIcon": "devicon:figma",
-      "githubRepo": "design-system"
+      "link": "https://github.com/richardh05/cmm-website",
+      "colorIcon": "devicon:microsoftsqlserver",
+      "githubRepo": "cmm-website"
     },
     {
-      "title": "Photography Workflow App",
+      "title": "Unreal Pinball",
       "resume": true,
-      "company": "Side Project",
-      "category": "appdev",
-      "description": "A lightweight local web app for managing shoot intake, selects, and client delivery — replacing a patchwork of folders, spreadsheets, and emails with a single tool built for the way I work.",
-      "tags": ["React", "SQLite", "Photography", "Workflow", "Node.js"],
-      "icon": "eye",
-      "sliderImage": "/images/projects/web-app2.jpg",
-      "sliderOrder": 3,
-      "backgroundImage": "/images/projects/web-app3.jpg",
+      "company": "University",
+      "category": "full-stack",
+      "description": "A high-performance, object-oriented C++ application. Uses a custom, lightweight collision system within Unreal Engine, bypassing standard physics.",
+      "tags": ["Unreal Engine", "C++"],
+      "sliderImage": "/images/projects/pinball.png",
+      "sliderOrder": 5,
+      "backgroundImage": "/images/projects/pinball.png",
       "images": [
-        "/images/projects/web-app1.jpg",
-        "/images/projects/web-app2.jpg",
-        "/images/projects/web-app3.jpg"
+        "/images/projects/pinball.png"
       ],
-      "link": "",
-      "colorIcon": "devicon:react",
-      "githubRepo": "photo-workflow"
+      "link": "https://github.com/richardh05/Pinball",
+      "colorIcon": "devicon:unrealengine",
+      "githubRepo": "Pinball"
+    },
+    {
+      "title": "Carlos Pizza",
+      "resume": true,
+      "company": "University",
+      "category": "full-stack",
+      "description": "An example web application and database for a restaurant. Uses a full Microsoft stack, with deep .NET integration",
+      "tags": ["ASP.NET CORE", "Microsoft SQL Server", "C#", "Docker", "HTML", "CSS"],
+      "sliderImage": "/images/projects/carlos_welcome.png",
+      "sliderOrder": 3,
+      "backgroundImage": "/images/projects/carlos_welcome.png",
+      "images": [
+        "/images/projects/carlos_welcome.png",
+        "/images/projects/carlos_contact.png",
+        "/images/projects/carlos_item.png"
+      ],
+      "link": "https://github.com/richardh05/Carlos-Pizza/",
+      "colorIcon": "devicon:dotnetcore",
+      "githubRepo": "Carlos-Pizza"
+    },
+    {
+      "title": "CricketCast",
+      "resume": true,
+      "featured": true,
+      "company": "University",
+      "category": "full-stack",
+      "description": "An open-source Python package for live-streaming cricket matches in local communities. Achieved 80% as my undergraduate dissertation.",
+      "tags": ["FastAPI", "Python", "HTMX", "Raspberry Pi"],
+      "sliderImage": "/images/projects/cricketcast.png",
+      "sliderOrder": 4,
+      "backgroundImage": "/images/projects/cricketcast.png",
+      "images": [
+        "/images/projects/cricketcast.png"
+      ],
+      "link": "https://github.com/richardh05/CricketCast/",
+      "colorIcon": "devicon:python",
+      "githubRepo": "CricketCast"
     }
   ]
 }

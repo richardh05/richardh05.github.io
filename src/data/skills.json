@@ -1,64 +1,70 @@
 {
   "section": {
     "eyebrow": "What I work with",
-    "heading": "Technical Arsenal"
+    "heading": "Technical Skills"
   },
   "categories": [
     {
-      "title": "Design & Illustration",
+      "title": "Frameworks",
       "skills": [
-        { "name": "Figma",       "icon": "simple-icons:figma" },
-        { "name": "Photoshop",   "icon": "simple-icons:adobephotoshop" },
-        { "name": "Illustrator", "icon": "simple-icons:adobeillustrator" },
-        { "name": "Blender",     "icon": "simple-icons:blender" },
-        { "name": "Sketch",      "icon": "simple-icons:sketch" }
+        { "name": "Flutter",       "icon": "devicon-plain:flutter" },
+        { "name": "ASP.NET CORE",   "icon": "devicon-plain:dotnetcore" },
+        { "name": "FastAPI", "icon": "devicon-plain:fastapi" },
+        { "name": "Unreal Engine", "icon": "simple-icons:unrealengine" },
+        { "name": "Astro JS", "icon": "devicon-plain:astro" },
+        { "name": "HTMX", "icon": "devicon-plain:htmx" }
       ]
     },
     {
-      "title": "Web & Frontend",
+      "title": "Languages",
       "skills": [
+        { "name": "Python",  "icon": "simple-icons:python" },
+        { "name": "Java",  "icon": "devicon-plain:java" },
+        { "name": "C++",  "icon": "simple-icons:cplusplus" },
+        { "name": "C#", "icon": "devicon-plain:csharp" },
         { "name": "HTML5",      "icon": "simple-icons:html5" },
-        { "name": "CSS3",       "icon": "simple-icons:css3" },
-        { "name": "JavaScript", "icon": "simple-icons:javascript" },
-        { "name": "TypeScript", "icon": "simple-icons:typescript" },
-        { "name": "React",      "icon": "simple-icons:react" },
-        { "name": "Bootstrap",  "icon": "simple-icons:bootstrap" }
-      ]
-    },
-    {
-      "title": "Motion, 3D & Video",
-      "skills": [
-        { "name": "Three.js",     "icon": "simple-icons:threedotjs" },
-        { "name": "After Effects","icon": "simple-icons:adobeaftereffects" },
-        { "name": "Premiere Pro", "icon": "simple-icons:adobepremierepro" },
-        { "name": "Photoshop",    "icon": "simple-icons:adobephotoshop" }
-      ]
-    },
-    {
-      "title": "Platforms & Publishing",
-      "skills": [
-        { "name": "WordPress", "icon": "simple-icons:wordpress" },
-        { "name": "Drupal",    "icon": "simple-icons:drupal" },
-        { "name": "Hugo",      "icon": "simple-icons:hugo" },
-        { "name": "AWS",       "icon": "simple-icons:amazonaws" }
+        { "name": "CSS3",       "icon": "simple-icons:css3" }
       ]
     },
     {
       "title": "Dev & Workflow Tools",
       "skills": [
+        { "name": "Antigravity IDE",   "icon": "simple-icons:googlegemini" },
+        { "name": "VSCode",   "icon": "devicon-plain:vscode" },
+        { "name": "Visual Studio",   "icon": "devicon-plain:visualstudio" },
+        { "name": "Jetbrains IDEs",      "icon": "simple-icons:jetbrains" },
         { "name": "Git",      "icon": "simple-icons:git" },
-        { "name": "GitHub",   "icon": "simple-icons:github" },
-        { "name": "Bash",     "icon": "simple-icons:gnubash" },
-        { "name": "Markdown", "icon": "simple-icons:markdown" }
+        { "name": "GitHub",   "icon": "simple-icons:github" }
       ]
     },
     {
-      "title": "Data & Infrastructure",
+      "title": "Project Management",
+      "skills": [
+        { "name": "Figma",       "icon": "simple-icons:figma" },
+        { "name": "Linear",   "icon": "simple-icons:linear" },
+        { "name": "Miro",   "icon": "simple-icons:miro" },
+        { "name": "Mermaid",   "icon": "simple-icons:mermaid" }
+      ]
+    },
+    
+    
+    
+    {
+      "title": "Databases",
       "skills": [
         { "name": "SQLite",     "icon": "simple-icons:sqlite" },
-        { "name": "Nginx",      "icon": "simple-icons:nginx" },
+        { "name": "SQL Server", "icon": "devicon-plain:microsoftsqlserver"},
+        { "name": "Pocketbase",     "icon": "simple-icons:pocketbase" }
+        
+      ]
+    },
+    {
+      "title": "Deployment",
+      "skills": [
         { "name": "Docker",     "icon": "simple-icons:docker" },
-        { "name": "Prometheus", "icon": "simple-icons:prometheus" }
+        { "name": "Debian Linux",     "icon": "simple-icons:debian" },
+        { "name": "Bash",     "icon": "simple-icons:gnubash" },
+        { "name": "Traefik",      "icon": "simple-icons:traefikproxy" }
       ]
     }
   ]
