@@ -14,8 +14,8 @@ on:
   # every time you push a change, uncomment the three lines below.
   # Just remove the leading '#' from each of the three lines.
   #
-  #push:
-  #  branches: [main]
+  push:
+   branches: [main]
 permissions:
   contents: read
   pages: write
