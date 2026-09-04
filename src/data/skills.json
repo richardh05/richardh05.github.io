@@ -52,8 +52,9 @@
     {
       "title": "Databases",
       "skills": [
-        { "name": "SQLite",     "icon": "simple-icons:sqlite" },
+        { "name": "Azure SQL", "icon": "devicon-plain:azuresqldatabase"},
         { "name": "SQL Server", "icon": "devicon-plain:microsoftsqlserver"},
+        { "name": "SQLite",     "icon": "simple-icons:sqlite" },
         { "name": "Pocketbase",     "icon": "simple-icons:pocketbase" }
         
       ]
@@ -61,8 +62,9 @@
     {
       "title": "Deployment",
       "skills": [
-        { "name": "Docker",     "icon": "simple-icons:docker" },
-        { "name": "Debian Linux",     "icon": "simple-icons:debian" },
+        { "name": "Azure",     "icon": "devicon-plain:azure" },
+        { "name": "Docker",     "icon": "devicon-plain:docker" },
+        { "name": "Debian Linux",     "icon": "devicon-plain:debian" },
         { "name": "Bash",     "icon": "simple-icons:gnubash" },
         { "name": "Traefik",      "icon": "simple-icons:traefikproxy" }
       ]

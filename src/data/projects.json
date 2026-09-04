@@ -60,7 +60,7 @@
       "company": "University",
       "category": "full-stack",
       "description": "An example web application and database for a restaurant. Uses a full Microsoft stack, with deep .NET integration",
-      "tags": ["ASP.NET CORE", "Microsoft SQL Server", "C#", "Docker", "HTML", "CSS"],
+      "tags": ["ASP.NET CORE", "Azure SQL", "Azure App Service", "C#", "Docker", "HTML", "CSS"],
       "sliderImage": "/images/projects/carlos_welcome.png",
       "sliderOrder": 3,
       "backgroundImage": "/images/projects/carlos_welcome.png",
